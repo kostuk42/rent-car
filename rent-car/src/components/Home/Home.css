@@ -1,0 +1,30 @@
+/* components/Home/Home.css */
+.home-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.home-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.home-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.home-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.home-link:hover {
+    background-color: #2ecc71;
+}

@@ -1,0 +1,37 @@
+/* components/FilterDropdown/FilterDropdown.css */
+.filter-dropdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 18px;
+    min-width: 859px;
+}
+
+/*.filter-dropdown label {*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*.MuiAutocomplete-root {*/
+/*    width: 200px;*/
+/*    border: 1px solid #ccc;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.MuiAutocomplete-input {*/
+/*    background-color: #fff;*/
+/*    color: #000;*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*.select-input-wrapper input::placeholder {*/
+/*    color: black!important;*/
+/*    opacity: 1;*/
+/*}*/
+li.MuiAutocomplete-option:hover {
+    color: #121417;
+}
+li.MuiAutocomplete-option[aria-selected='true']{
+    /*background-color: #121417!important;*/
+    opacity: 1;
+    color: #121417;
+}

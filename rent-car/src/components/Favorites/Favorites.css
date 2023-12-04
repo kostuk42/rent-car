@@ -1,0 +1,33 @@
+/* components/Favorites/Favorites.css */
+.favorites-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.favorite-advert {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.favorite-advert h2 {
+    margin-bottom: 8px;
+}
+
+.favorite-advert p {
+    margin-bottom: 12px;
+}
+
+.no-favorites-message {
+    font-size: 18px;
+    color: #555;
+}
+.catalog {
+    margin-top: 29px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 29px;
+}

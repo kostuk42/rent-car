@@ -1,0 +1,31 @@
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 29px;
+}
+.wrapper {
+    margin: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 859px;
+}
+.load-more-button{
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0;
+    cursor: pointer;
+    color: #3470FF;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: transparent;
+}
+.load-more-button:disabled{
+    color: #BEC2CE;
+    cursor: default;
+}

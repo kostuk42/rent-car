@@ -1,0 +1,20 @@
+/* components/Pagination/Pagination.css */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.pagination button.active {
+    background-color: #2ecc71;
+}
