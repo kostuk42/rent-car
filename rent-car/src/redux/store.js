@@ -1,20 +1,10 @@
-// redux/store.js
-import { configureStore, combineReducers } from '@reduxjs/toolkit';
+import {combineReducers, configureStore} from '@reduxjs/toolkit';
 import filtersReducer from './filtersSlice';
 import favoritesReducer from './favoritesSlice';
 import paginationReducer from './paginationSlice';
 import {advertsApi} from "./api";
-import { setupListeners } from '@reduxjs/toolkit/query';
-import {
-    persistStore,
-    persistReducer,
-    FLUSH,
-    REHYDRATE,
-    PAUSE,
-    PERSIST,
-    PURGE,
-    REGISTER,
-} from 'redux-persist';
+import {setupListeners} from '@reduxjs/toolkit/query';
+import {FLUSH, PAUSE, PERSIST, persistReducer, persistStore, PURGE, REGISTER, REHYDRATE,} from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
 const persistConfig = {

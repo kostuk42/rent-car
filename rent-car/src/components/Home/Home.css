@@ -2,6 +2,11 @@
 .home-container {
     text-align: center;
     padding: 20px;
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
 }
 
 .home-title {
@@ -18,7 +23,7 @@
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #3498db;
+    background-color: #1A76D2;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -26,5 +31,26 @@
 }
 
 .home-link:hover {
-    background-color: #2ecc71;
+    background-color: #9747FF;
+;
+}
+
+.hero {
+    position: relative;
+    margin-top: -64px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/images/car.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
 }

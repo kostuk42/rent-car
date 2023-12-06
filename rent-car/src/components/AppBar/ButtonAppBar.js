@@ -4,19 +4,16 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 
 export default function ButtonAppBar({navigateCatalog, navigateFavorites, navigateHome}) {
     return (
-        <Box sx={{ flexGrow: 1,  minWidth: '859px', }}>
-            <AppBar position="static">
+        <Box sx={{flexGrow: 1, minWidth: '859px',}}>
+            <AppBar position="fixed">
                 <Toolbar>
                     <Typography variant="h6"
                                 onClick={navigateHome}
                                 component="div"
-                                sx={{
-                                    flexGrow: 1 }}>
+                                sx={{flexGrow: 1}}>
                         Home
                     </Typography>
                     <Button color="inherit" onClick={navigateCatalog} style={{marginRight: '8px'}}>Catalog</Button>

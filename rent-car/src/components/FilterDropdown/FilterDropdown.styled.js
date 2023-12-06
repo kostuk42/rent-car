@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import {Paper} from '@mui/material';
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import InputBase from '@mui/material/InputBase';
-import InputAdornment from '@mui/material/InputAdornment';
 
 export const FilterStyled = styled.div`
     display: flex;
@@ -163,4 +162,32 @@ export const InputAdornmentStyles = {
     }
 }
 
+export const selectPriceStyles = {
+    '& .MuiPaper-root': {
+        borderRadius: '14px',
+        border: '1px solid #1214170D',
+        boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'
+    },
+    '& li': {
+        fontSize: '16px',
+        fontWeight: 500,
+        lineHeight: '20px',
+        letterSpacing: 0,
+        color: '#12141733'
+    },
+    '& li:hover': {
+        color: '#121417!important'
+    },
+    '& li.Mui-selected': {
+        color: '#121417',
+        backgroundColor: "transparent"
+    }
+}
 
+export const FilterWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 18px;
+    min-width: 859px;
+`

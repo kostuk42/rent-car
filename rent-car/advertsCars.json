@@ -648,5 +648,265 @@
         "address": "321 Example Lane, Kharkiv, Ukraine",
         "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit and insurance required",
         "mileage": 6234
+    },
+    {
+        "id": 9642,
+        "year": 2019,
+        "make": "Toyota",
+        "model": "Corolla",
+        "type": "Sedan",
+        "photoLink": "https://pixabay.com/get/g8351a32b479610dc251594e75f1cec6a95ea2a7b1bea1938b1ddd77525c6707a80b06d52bf1c1af20682f02774c59004f31b3bf1b93d063ef7b9b28ba2aac1c3_1280.jpg",
+        "description": "The Toyota Corolla Sedan is a reliable and fuel-efficient car known for its practicality and low ownership costs. With a spacious interior, advanced safety features, and a reputation for durability, it's an ideal choice for daily commuting.",
+        "fuelConsumption": "5.8",
+        "engineSize": "1.8L 4-cylinder",
+        "accessories": [
+            "Toyota Safety Sense",
+            "8-inch touchscreen infotainment",
+            "Bluetooth connectivity"
+        ],
+        "functionalities": [
+            "Front-Wheel Drive",
+            "Lane Departure Warning",
+            "Rearview camera"
+        ],
+        "rentalPrice": "$45",
+        "rentalCompany": "City Car Rentals",
+        "address": "456 Main Street, Lviv, Ukraine",
+        "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
+        "mileage": 7890
+    },
+    {
+        "id": 9632,
+        "year": 2021,
+        "make": "Honda",
+        "model": "Civic",
+        "type": "Sedan",
+        "photoLink": "https://pixabay.com/get/gc6bf59b4c0569930f3efc7e29e5f33114663cbc602ca0e1022a6674ff9e9bfe2483321f49f8b2255859dfc92fa84d712bf6fee826373a163760712ee69c441a7_1280.jpg",
+        "description": "The Honda Civic Sedan combines style, efficiency, and performance in a compact package. With a modern design, advanced safety features, and intuitive technology, it offers an enjoyable driving experience for both city and highway travel.",
+        "fuelConsumption": "6.0",
+        "engineSize": "2.0L 4-cylinder",
+        "accessories": [
+            "Honda Sensing Suite",
+            "7-inch Display Audio touchscreen",
+            "Apple CarPlay and Android Auto"
+        ],
+        "functionalities": [
+            "Front-Wheel Drive",
+            "Lane Keeping Assist",
+            "Adaptive Cruise Control"
+        ],
+        "rentalPrice": "$55",
+        "rentalCompany": "Premium Rentals",
+        "address": "789 Sample Road, Odessa, Ukraine",
+        "rentalConditions": "Minimum age: 23\nValid driver's license\nInsurance coverage included",
+        "mileage": 4500
+    },
+    {
+        "id": 9633,
+        "year": 2022,
+        "make": "Ford",
+        "model": "Focus",
+        "type": "Hatchback",
+        "photoLink": "https://pixabay.com/get/g864232d3045130297adff8e51ca40d875eb9d85c76dd34e63950c9955a4124e78df6d8fa1e3380b2faf8069a0a95e46109c02eaad13ce2ff51d434de63176eb5_1280.jpg",
+        "description": "The Ford Focus Hatchback delivers a sporty and dynamic driving experience with its agile handling and stylish design. Packed with modern features, this compact hatchback is perfect for those who seek both performance and versatility.",
+        "fuelConsumption": "5.5",
+        "engineSize": "2.3L 4-cylinder",
+        "accessories": [
+            "Sync 3 infotainment system",
+            "Wireless charging pad",
+            "Keyless entry"
+        ],
+        "functionalities": [
+            "Front-Wheel Drive",
+            "Sport-tuned suspension",
+            "Backup camera"
+        ],
+        "rentalPrice": "$48",
+        "rentalCompany": "Dynamic Rentals",
+        "address": "101 Rental Avenue, Kyiv, Ukraine",
+        "rentalConditions": "Minimum age: 22\nValid driver's license\nSecurity deposit required",
+        "mileage": 6000
+    },
+    {
+        "id": 9677,
+        "year": 2020,
+        "make": "Chevrolet",
+        "model": "Cruze",
+        "type": "Sedan",
+        "photoLink": "https://pixabay.com/get/ga2556a034ea60f9fd397bb0d37919fa0c86f4f630412a53802df46df03dc2cb457f144e50bdceac68e17d317d631bfc49e8e41a8737fb6a24892b211718be15e_1280.jpg",
+        "description": "The Chevrolet Cruze Sedan offers a comfortable and refined ride with its sleek design and modern amenities. Equipped with advanced safety features and technology, it's an excellent choice for those who prioritize style and safety in their daily commute.",
+        "fuelConsumption": "6.4",
+        "engineSize": "1.4L 4-cylinder",
+        "accessories": [
+            "7-inch touchscreen display",
+            "4G LTE Wi-Fi hotspot",
+            "Remote start"
+        ],
+        "functionalities": [
+            "Front-Wheel Drive",
+            "Rear Cross Traffic Alert",
+            "Teen Driver Technology"
+        ],
+        "rentalPrice": "$47",
+        "rentalCompany": "Metro Car Hire",
+        "address": "555 Rental Street, Dnipro, Ukraine",
+        "rentalConditions": "Minimum age: 21\nValid driver's license\nInsurance coverage included",
+        "mileage": 7200
+    },
+    {
+        "id": 9635,
+        "year": 2021,
+        "make": "Nissan",
+        "model": "Versa",
+        "type": "Sedan",
+        "photoLink": "https://pixabay.com/get/g55a86eb7fa0beb5672cc934c373bc6ab36fee51fc1f781a79693dba1d06af9ac38bd980e4c6618cdd9055386b5ef63a093e1566a7c1f5120e271d2635bd4e742_1280.jpg",
+        "description": "The Nissan Versa Sedan is a compact car that combines efficiency with modern features. Its stylish exterior and spacious interior make it an ideal choice for those who seek affordability without compromising on comfort and technology.",
+        "fuelConsumption": "5.9",
+        "engineSize": "1.6L 4-cylinder",
+        "accessories": [
+            "7-inch touchscreen infotainment",
+            "Intelligent Forward Collision Warning",
+            "Bluetooth hands-free calling"
+        ],
+        "functionalities": [
+            "Front-Wheel Drive",
+            "Automatic Emergency Braking",
+            "Rearview monitor"
+        ],
+        "rentalPrice": "$46",
+        "rentalCompany": "Cityscape Rentals",
+        "address": "876 Rental Boulevard, Lviv, Ukraine",
+        "rentalConditions": "Minimum age: 23\nValid driver's license\nSecurity deposit required",
+        "mileage": 5500
+    },
+    {
+        "id": 9636,
+        "year": 2020,
+        "make": "Hyundai",
+        "model": "Elantra",
+        "type": "Sedan",
+        "photoLink": "https://pixabay.com/get/gb17416db54188ea4f971dd6d9eea23bf06fdb378f31cf9770774acc2f4f0364ce26d2f0043694f490fc26e964c2a053cd3ec27c837f3424faea1abee2d626064_1280.jpg",
+        "description": "The Hyundai Elantra Sedan is a stylish and feature-packed car that delivers a smooth and comfortable ride. With its modern design, advanced safety features, and efficient engine, it's a great choice for both short trips and long journeys.",
+        "fuelConsumption": "6.1",
+        "engineSize": "2.0L 4-cylinder",
+        "accessories": [
+            "8-inch touchscreen navigation",
+            "Blind-Spot Collision Warning",
+            "Wireless device charging"
+        ],
+        "functionalities": [
+            "Front-Wheel Drive",
+            "Smart Cruise Control",
+            "Rearview camera"
+        ],
+        "rentalPrice": "$49",
+        "rentalCompany": "Elite Auto Rentals",
+        "address": "234 Rental Lane, Odessa, Ukraine",
+        "rentalConditions": "Minimum age: 24\nValid driver's license\nInsurance coverage included",
+        "mileage": 6800
+    },
+    {
+        "id": 9637,
+        "year": 2022,
+        "make": "Mazda",
+        "model": "Mazda3",
+        "type": "Hatchback",
+        "photoLink": "https://pixabay.com/get/ge2a8d8b497f39fb6a5080e6f623b2f035738849c6ab3df148fcecc01ea62329595b2bcbf4d4955386ac92eede4196044f8429cbd67606f732e2ae0870abff14a_1280.jpg",
+        "description": "The Mazda Mazda3 Hatchback blends sportiness with practicality, featuring a dynamic design and impressive fuel efficiency. With its premium interior and advanced safety technologies, it's an excellent choice for those who value a thrilling driving experience.",
+        "fuelConsumption": "6.2",
+        "engineSize": "2.5L 4-cylinder",
+        "accessories": [
+            "8.8-inch infotainment display",
+            "Apple CarPlay and Android Auto",
+            "Bose premium audio system"
+        ],
+        "functionalities": [
+            "Front-Wheel Drive",
+            "Lane Departure Warning",
+            "Adaptive Front-Lighting System"
+        ],
+        "rentalPrice": "$52",
+        "rentalCompany": "Skyline Car Rentals",
+        "address": "789 Skyview Street, Kharkiv, Ukraine",
+        "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
+        "mileage": 5000
+    },
+    {
+        "id": 9638,
+        "year": 2021,
+        "make": "Volkswagen",
+        "model": "Golf",
+        "type": "Hatchback",
+        "photoLink": "https://pixabay.com/get/gbbd75e419fc25c1fa2eb27a6da893829b1e14d3b86bfb83b0e65880ad6705977331451ef2a6e52cc5036a3580c04b7c390dd73d5fab3dd05f8f92fe42edd9ab6_1280.jpg",
+        "description": "The Volkswagen Golf Hatchback is a versatile and well-rounded car known for its comfortable ride and upscale interior. With its strong performance and advanced safety features, it's an ideal choice for those who appreciate a blend of practicality and style.",
+        "fuelConsumption": "5.7",
+        "engineSize": "1.8L 4-cylinder",
+        "accessories": [
+            "8-inch touchscreen display",
+            "Volkswagen Car-Net App-Connect",
+            "Front Assist with Autonomous Emergency Braking"
+        ],
+        "functionalities": [
+            "Front-Wheel Drive",
+            "Blind Spot Monitor",
+            "Rearview camera"
+        ],
+        "rentalPrice": "$50",
+        "rentalCompany": "Viva Auto Rentals",
+        "address": "456 Drive Avenue, Lviv, Ukraine",
+        "rentalConditions": "Minimum age: 22\nValid driver's license\nInsurance coverage included",
+        "mileage": 6000
+    },
+    {
+        "id": 9639,
+        "year": 2020,
+        "make": "Subaru",
+        "model": "Impreza",
+        "type": "Sedan",
+        "photoLink": "https://pixabay.com/get/gd89e265854084935368cabcda3b6f2eedbfec74dac7c66c830c5ff8b13d3921bd194196affc7bae18d859b9bd1432c8b2c48f952c8dc745cf55134ad5c064dde_1280.jpg",
+        "description": "The Subaru Impreza Sedan offers a perfect blend of reliability, safety, and all-wheel-drive performance. With its spacious cabin and advanced technology, it's an excellent choice for those who want a comfortable and capable sedan for various driving conditions.",
+        "fuelConsumption": "6.3",
+        "engineSize": "2.0L 4-cylinder",
+        "accessories": [
+            "SUBARU STARLINK multimedia",
+            "Eyesight Driver Assist Technology",
+            "Symmetrical All-Wheel Drive"
+        ],
+        "functionalities": [
+            "All-Wheel Drive",
+            "Vehicle Dynamics Control",
+            "Rear-vision camera"
+        ],
+        "rentalPrice": "$53",
+        "rentalCompany": "Alpine Rentals",
+        "address": "101 Summit Street, Kyiv, Ukraine",
+        "rentalConditions": "Minimum age: 23\nValid driver's license\nSecurity deposit required",
+        "mileage": 4800
+    },
+    {
+        "id": 9640,
+        "year": 2022,
+        "make": "Chrysler",
+        "model": "300",
+        "type": "Sedan",
+        "photoLink": "https://pixabay.com/get/ga18560fc8a08c8fbb98f529110e46d89f886a1203d6b49e868fb327028a638e2a8f9890084f0539e0e5f7395007100a2664a95398cf01c899b36de7af57b70cf_1280.jpg",
+        "description": "The Chrysler 300 Sedan combines luxury and performance, featuring a bold design and a refined interior. With its powerful engine and advanced technology, it's an ideal choice for those who appreciate a spacious and upscale driving experience.",
+        "fuelConsumption": "7.0",
+        "engineSize": "3.6L V6",
+        "accessories": [
+            "Uconnect 4C infotainment system",
+            "Leather-trimmed seats",
+            "Dual-Pane Panoramic Sunroof"
+        ],
+        "functionalities": [
+            "Rear-Wheel Drive",
+            "Blind Spot Monitoring",
+            "Rear Cross Path Detection"
+        ],
+        "rentalPrice": "$55",
+        "rentalCompany": "Luxury Auto Rentals",
+        "address": "789 Boulevard Drive, Odessa, Ukraine",
+        "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
+        "mileage": 3500
     }
 ]

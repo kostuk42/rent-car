@@ -1,8 +1,6 @@
-// components/Favorites/Favorites.js
 import React from 'react';
-import { useSelector } from 'react-redux';
+import {useSelector} from 'react-redux';
 import AdvertCard from '../AdvertCard/AdvertCard';
-import './Favorites.css';
 
 const Favorites = () => {
     const favoriteAdverts = useSelector(state => state.favorites);
@@ -11,8 +9,7 @@ const Favorites = () => {
         <div className="catalog">
             {favoriteAdverts && favoriteAdverts.map((advert, i) => (
                 <AdvertCard key={i} advert={advert}/>))}
-            {!favoriteAdverts?.length && <p className="no-favorites-message">No favorite adverts yet.</p>}
-
+            {!favoriteAdverts?.length && <p style={{paddingTop: '29px'}}>No favorite adverts yet.</p>}
         </div>
     );
 }

@@ -54,8 +54,10 @@ export const MainButton = styled.button`
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0em;
-    width: 100%;
+    width: ${props => props.width || '100%'};
     min-height: 48px;
+    height: ${props => props.height || '48px'};
+    margin-top: ${props => props.marginTop || '0px'};
     background: #3470FF;
     border-radius: 12px;
     border: none;
@@ -66,3 +68,19 @@ export const MainButton = styled.button`
     background: #0B44CD;
     }
 `
+
+export const favoriteIconStyles = {
+    position: 'absolute',
+    top: 12,
+    right: 12,
+    color: '#3470FF',
+    pointerEvents: 'none'
+}
+
+export const favoriteIconStylesFilled = {
+    position: 'absolute',
+    top: 12,
+    right: 12,
+    color: '#FFFFFF',
+    pointerEvents: 'none'
+}

@@ -4,15 +4,14 @@ import {useDispatch, useSelector} from 'react-redux';
 import './FilterDropdown.css';
 import {makes} from "../../constants/makes";
 import {setFilters} from "../../redux/filtersSlice";
-import {isFiltering} from "../Catalog/Catalog";
 import {setCurrentPage} from "../../redux/paginationSlice";
 import {Autocomplete, InputAdornment} from "@mui/material";
 import {
     AutocompleteStyles,
     ChevronAutocomplete,
-    ChevronSelect,
+    ChevronSelect, FilterWrapper,
     InputAdornmentStyles,
-    Label,
+    Label, selectPriceStyles,
     SelectWrapper,
     StyledInput,
     StyledLi,
@@ -24,19 +23,8 @@ import {nanoid} from "nanoid";
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import {MainButton} from "../AdvertCard/AdvertCard.styled";
+import {formatNumber, isFiltering, renderPriceValue} from "../../services/utils";
 
-
-export const toNumber = (value) => {
-    return +(value.replace(/,/g, ''))
-}
-
-const formatNumber = (miles) => {
-    if (!miles || Number.isNaN(miles)) {
-        return ''
-    }
-    const normalized = miles.replace(/,/g, '');
-    return normalized.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
 
 const FilterDropdown = ({prices}) => {
     const dispatch = useDispatch();
@@ -50,8 +38,9 @@ const FilterDropdown = ({prices}) => {
 
         if (!isFiltering(newFilter)) {
             dispatch(setCurrentPage(1));
+        } else {
+            dispatch(setFilters(newFilter));
         }
-        dispatch(setFilters(newFilter));
     };
 
     const handleMileAgeInput = (e) => {
@@ -67,7 +56,7 @@ const FilterDropdown = ({prices}) => {
     }
 
     return (
-        <div className="filter-dropdown">
+        <FilterWrapper>
             <SelectWrapper>
                 <Label>
                     Car Brand
@@ -76,6 +65,7 @@ const FilterDropdown = ({prices}) => {
                     onChange={(e) => handleMakeInput(e)}
                     sx={AutocompleteStyles}
                     options={makes}
+                    value={filters.make}
                     placeholder={'Make'}
                     PaperComponent={StyledPaper}
                     renderOption={(props, option) => (
@@ -99,41 +89,14 @@ const FilterDropdown = ({prices}) => {
                     value={filters.price}
                     IconComponent={ChevronSelect}
                     onChange={handlePriceInput}
-                    renderValue={(price) => {
-                        if (price === 'All') {
-                            price = ' '
-                        }
-                        return `To ${price}$`
-                    }}
+                    renderValue={renderPriceValue}
+                    type="text"
                     MenuProps={{
-                        sx: {
-                            '& .MuiPaper-root': {
-                                borderRadius: '14px',
-                                border: '1px solid #1214170D',
-                                boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'
-                            },
-                            '& li': {
-                                fontSize: '16px',
-                                fontWeight: 500,
-                                lineHeight: '20px',
-                                letterSpacing: 0,
-                                color: '#12141733'
-                            },
-                            '& li:hover': {
-                                color: '#121417!important'
-                            },
-                            '& li.Mui-selected': {
-                                color: '#121417',
-                                backgroundColor: "transparent"
-                            }
-
-                        }
+                        sx: selectPriceStyles
                     }}
-                    input={<StyledInput placeholder="To $"/>}
-                >
-                    {/*<MenuItem value="">*/}
-                    {/*    All*/}
-                    {/*</MenuItem>*/}
+                    input={
+                        <StyledInput placeholder="To $"/>
+                    }>
                     {prices.map((price, index) => (
                         <MenuItem key={index} value={price}>
                             {price}
@@ -142,12 +105,8 @@ const FilterDropdown = ({prices}) => {
 
                 </Select>
             </SelectWrapper>
-                <SelectWrapper style={{
-                    minWidth: '320px'
-                }}>
-                    <Label>
-                        Car mileage / km
-                    </Label>
+                <SelectWrapper style={{minWidth: '320px'}}>
+                    <Label>Car mileage / km</Label>
                     <StyledMileFromInput
                         type="text"
                         name="min"
@@ -159,8 +118,7 @@ const FilterDropdown = ({prices}) => {
                                 From
                             </InputAdornment>
                         }
-                        onChange={(e) => handleMileAgeInput(e)}
-                    />
+                        onChange={(e) => handleMileAgeInput(e)}/>
                     <StyledMileToInput
                         type="text"
                         name="max"
@@ -174,15 +132,9 @@ const FilterDropdown = ({prices}) => {
                         }
                         onChange={(e) => handleMileAgeInput(e)}/>
                 </SelectWrapper>
-            <MainButton
-                style={{
-                    width: '136px',
-                    height: '48px',
-                    marginTop: 'auto'
-                }}
+            <MainButton width={'136px'} height={'30px'} marginTop={'auto'}
                 onClick={() => handleSearch(filters.mileage.min, filters.mileage.max)} >Search</MainButton>
-            {/*<button onClick={() => handleSearch(filters.mileage.min, filters.mileage.max)}>Search</button>*/}
-        </div>
+        </FilterWrapper>
     );
 }
 

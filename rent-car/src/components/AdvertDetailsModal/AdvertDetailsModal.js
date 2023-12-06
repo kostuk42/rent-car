@@ -1,58 +1,43 @@
-// components/AdvertDetailsModal/AdvertDetailsModal.js
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import {Button, Modal, Typography} from "@mui/material";
+import {Modal} from "@mui/material";
 import Box from "@mui/material/Box";
-// import Close from "../../assets/images/close.svg";
 import {
-    CloseIcon, ConditionItem, ConditionList, ConditionSpan,
-    Description, IconX,
+    closeIconStyles,
+    ConditionItem,
+    ConditionList,
+    ConditionSpan,
+    Description,
     Image,
     Info,
     Item,
-    List, RentButton, Span,
+    List, modalStyle,
+    RentButton,
+    Span,
     TextWrap,
     Title,
     Wrap,
     Wrapper
 } from "./AdvertDetailsModal.styled";
 import {Close} from "@mui/icons-material";
-import {onImageError} from "../AdvertCard/AdvertCard";
+import onImageError from "../AdvertCard/AdvertCard";
 
-const modalStyle = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 541,
-    maxHeight: 830,
-    bgcolor: 'background.paper',
-    borderRadius: 6,
-    boxShadow: 24,
-};
+
 
 const AdvertDetailsModal = ({open, setOpen, data}) => {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
     return (
-        <div>
             <Modal
                 open={open}
                 onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
             >
                 <Box sx={modalStyle}>
+                    <Close onClick={handleClose}
+                           sx={closeIconStyles}/>
                     <Wrapper>
-                        <Close onClick={handleClose}
-                                 sx={{
-                                        position: 'absolute',
-                                        top: 12,
-                                        right: 12,
-                                 }}
-                        />
-                        <Image src={data.img || data.photoLink} alt={data.make} width="461" height="248" onError={onImageError} />
+                        <Image src={data.img || data.photoLink} alt={data.make} width="461" height="248"
+                               onError={onImageError}/>
                         <Wrap>
                             <TextWrap>
                                 <Title>
@@ -108,16 +93,15 @@ const AdvertDetailsModal = ({open, setOpen, data}) => {
                                 </ConditionItem>
                             </ConditionList>
                         </Wrap>
-                        <RentButton onClick={() => {
-                            window.location.href = 'tel:+380730000000';
-                        }}>
-                            Rental
-                            car
-                        </RentButton>
                     </Wrapper>
+                    <RentButton onClick={() => {
+                        window.location.href = 'tel:+380730000000';
+                    }}>
+                        Rental
+                        car
+                    </RentButton>
                 </Box>
             </Modal>
-        </div>
     );
 }
 

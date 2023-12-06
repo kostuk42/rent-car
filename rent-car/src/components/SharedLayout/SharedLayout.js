@@ -15,7 +15,7 @@ const SharedLayout = () => {
         navigate('/');
     }
     return (
-        <div>
+        <div style={{marginTop: '64px'}}>
             <ButtonAppBar navigateCatalog={navigateCatalog}
                           navigateHome={navigateHome}
                           navigateFavorites={navigateFavorites}/>

@@ -2,7 +2,10 @@ import styled from '@emotion/styled';
 
 export const Wrapper = styled.div`
   position: relative;
-  padding: 34px;
+  // padding: 34px;
+  height: calc(90vh - 64px);
+  overflow-y: auto;
+  // background-color: tomato;
 `;
 
 export const CloseIcon = styled.button`
@@ -114,6 +117,7 @@ export const ConditionSpan = styled.span`
 `;
 
 export const RentButton = styled.button`
+margin-top: 28px;
 font-size: 14px;
 font-weight: 600;
 line-height: 20px;
@@ -126,4 +130,23 @@ color: #fff;
 border-radius: 12px;
 border: none;
 `
+export const closeIconStyles = {
+    position: 'absolute',
+    top: 12,
+    right: 12,
+    color: 'black'
+}
+
+export const modalStyle = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 541,
+    height: '90vh',
+    bgcolor: 'background.paper',
+    borderRadius: 6,
+    boxShadow: 24,
+    padding: '34px'
+};
 

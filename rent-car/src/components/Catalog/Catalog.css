@@ -6,6 +6,7 @@
 }
 .wrapper {
     margin: 29px;
+    padding-top: 29px;
     display: flex;
     flex-direction: column;
     justify-content: center;

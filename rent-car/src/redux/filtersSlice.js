@@ -4,8 +4,8 @@ import { createSlice } from '@reduxjs/toolkit';
 export const filtersSlice = createSlice({
     name: 'filters',
     initialState: {
-            make: null,
-            price: '',
+            make: 'All',
+            price: 'All',
             mileage: { min: '', max: '' }
     },
     reducers: {

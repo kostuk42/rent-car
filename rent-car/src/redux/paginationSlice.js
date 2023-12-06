@@ -8,7 +8,6 @@ export const paginationSlice = createSlice({
     },
     reducers: {
         setCurrentPage: (state, action) => {
-            console.log(action)
             state.currentPage = action.payload;
         },
     },
