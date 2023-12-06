@@ -1,7 +1,7 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import AdvertCard from '../AdvertCard/AdvertCard';
-import FilterDropdown from '../FilterDropdown/FilterDropdown';
+import AdvertCard from '../../components/AdvertCard/AdvertCard';
+import FilterDropdown from '../../components/FilterDropdown/FilterDropdown';
 import {setCurrentPage} from '../../redux/paginationSlice';
 import {useGetAdvertsByPageQuery, useGetAllAdvertsQuery} from "../../redux/api";
 import './Catalog.css';

@@ -5,9 +5,9 @@ import store from "./redux/store";
 import {advertsApi} from "./redux/api";
 import './App.css'
 
-const Catalog = React.lazy(() => import('./components/Catalog/Catalog'));
-const Favorites = React.lazy(() => import('./components/Favorites/Favorites'));
-const Home = React.lazy(() => import('./components/Home/Home'));
+const Catalog = React.lazy(() => import('./pages/Catalog/Catalog'));
+const Favorites = React.lazy(() => import('./pages/Favorites/Favorites'));
+const Home = React.lazy(() => import('./pages/Home/Home'));
 
 function App() {
     store.dispatch(advertsApi.util.resetApiState());

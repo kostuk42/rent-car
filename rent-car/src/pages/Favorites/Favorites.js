@@ -1,6 +1,6 @@
 import React from 'react';
 import {useSelector} from 'react-redux';
-import AdvertCard from '../AdvertCard/AdvertCard';
+import AdvertCard from '../../components/AdvertCard/AdvertCard';
 
 const Favorites = () => {
     const favoriteAdverts = useSelector(state => state.favorites);
