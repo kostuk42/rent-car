@@ -1,7 +1,8 @@
 {
   "name": "rent-car",
   "version": "0.1.0",
-  "private": true,
+  "private": "false",
+  "homepage": "http://kostuk42.github.io/rent-car",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
