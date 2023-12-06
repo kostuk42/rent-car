@@ -12,7 +12,7 @@ const Home = React.lazy(() => import('./pages/Home/Home'));
 function App() {
     store.dispatch(advertsApi.util.resetApiState());
     return (
-        <BrowserRouter basename={'/'}>
+        <BrowserRouter basename={'/rent-car'}>
             <Routes>
                 <Route path="/" element={<SharedLayout/>}>
                     <Route index element={<Home/>}/>
