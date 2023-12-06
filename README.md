@@ -52,6 +52,6 @@ Used technologies:
 
 ![proto 1](rent-car/src/assets/images/img.png)
 
-![proto 2](rent-car/src/assets/images/img_1.png)
+![proto 2](rent-car/src/assets/images/img1.png)
 
 
