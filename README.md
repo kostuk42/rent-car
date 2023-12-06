@@ -50,8 +50,8 @@ Used technologies:
 - Material UI
 - Emotion Styled Components
 
-![proto 1](rent-car/src/assets/images/img.png)
+![proto 1](src/assets/images/img.png)
 
-![proto 2](rent-car/src/assets/images/img_1.png)
+![proto 2](src/assets/images/img_1.png)
 
 
